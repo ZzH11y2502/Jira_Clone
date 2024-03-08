@@ -12,9 +12,11 @@ import UsersLayout from "./layout/UsersLayout/UsersLayout";
 import UserBroad from "./page/UserBroad/UserBroad";
 import UpdateUser from "./page/UserBroad/UpdateUser";
 import EditProject from "./page/ProjectManagement/EditProject";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 function App() {
   return (
     <BrowserRouter>
+      <SpeedInsights />
       <Routes>
         <Route path="/" element={<Loginpage />}>
           <Route path="/" element={<FormLogin />} />
